@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jaturawit Uthaisaeng — Resume</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --line: #ddd;
+    --accent: #2b5797;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 24px 60px;
+    line-height: 1.5;
+    font-size: 15px;
+  }
+  header { margin-bottom: 24px; }
+  h1 { margin: 0 0 6px; font-size: 28px; }
+  .contact { color: var(--muted); font-size: 14px; }
+  .contact a { color: var(--accent); text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+  .contact span::after { content: " · "; color: var(--line); }
+  .contact span:last-child::after { content: ""; }
+  h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--accent);
+    border-bottom: 2px solid var(--line);
+    padding-bottom: 4px;
+    margin: 28px 0 12px;
+  }
+  h3 { font-size: 16px; margin: 16px 0 2px; }
+  .meta { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+  ul { margin: 4px 0 12px; padding-left: 20px; }
+  li { margin-bottom: 3px; }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px 24px;
+  }
+  .skill-cat strong { display: block; font-size: 13.5px; margin-bottom: 4px; }
+  .skill-cat div { color: var(--muted); font-size: 13.5px; }
+  .job { margin-bottom: 18px; }
+  .job:last-child { margin-bottom: 0; }
+  @media print {
+    body { margin: 0; padding: 0 10mm; }
+    a { color: var(--ink); text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Jaturawit Uthaisaeng</h1>
+  <div class="contact">
+    <span>jaturawit.uthaisaeng@gmail.com</span>
+    <span>+66 94 650 1430</span>
+    <span><a href="https://github.com/jaturawit-uthaisaeng">github.com/jaturawit-uthaisaeng</a></span>
+    <span><a href="https://linkedin.com/in/jaturawit-uthaisaeng-681317213">linkedin.com/in/jaturawit-uthaisaeng</a></span>
+  </div>
+</header>
+
+<section>
+  <h2>Education</h2>
+  <h3>Khon Kaen University, Thailand</h3>
+  <div class="meta">Bachelor's Degree in Computer Engineering &nbsp;·&nbsp; July 2018 – May 2022</div>
+</section>
+
+<section>
+  <h2>Work Experience</h2>
+
+  <div class="job">
+    <h3>Backend Developer — Hugeman Consultant</h3>
+    <div class="meta">January 2023 – February 2026</div>
+    <p><strong>STA Friends &amp; STA Back Office (Web and Mobile Apps)</strong></p>
+    <ul>
+      <li>Development: Created the STA Friends application, supporting Thailand and Indonesia, using Golang and the gRPC protocol, and applied a microservices architecture within a monorepo</li>
+      <li>Architecture: Applied Clean Architecture, SOLID principles, Microservices</li>
+      <li>Agile Process: Managed sprint planning, story point estimation, DoD creation, and task assignments</li>
+      <li>Code Review: Reviewed pull requests to ensure clean code, maintain coding standards, and improve overall team code quality</li>
+      <li>CI/CD Automation: Maintained full deployment pipelines using Jenkins, ArgoCD</li>
+      <li>Deployment &amp; Version Control: Managed releases across develop, staging, UAT, and production with secure environment handling (AWS Secrets) and enforced Git branching strategies to ensure consistent, reliable delivery</li>
+      <li>Testing: Implemented Golang unit tests</li>
+      <li>AI Efficiency: Leveraged AI tools to accelerate development and reduce repetitive tasks</li>
+      <li>Monitoring &amp; QA: Utilized Grafana for stability and quality control</li>
+      <li>Scrum Practice: Participated fully in Scrum ceremonies in a full Agile environment</li>
+    </ul>
+    <p><strong>Skyller Solutions (Web Application)</strong></p>
+    <ul>
+      <li>Web Development: Developed platform APIs mainly in Golang, with some components in Rust</li>
+      <li>AI Efficiency: Leveraged AI tools to accelerate development and reduce repetitive tasks</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Backend Developer — Ascend Commerce (Contract)</h3>
+    <div class="meta">March 2026 – Present</div>
+    <p><strong>Amaze Super App, AxtraMall</strong></p>
+    <ul>
+      <li>Developed loyalty point exchange capabilities between Amaze and partner platforms</li>
+      <li>Implemented and migrated backend APIs from C++ to Golang, improving code maintainability and supporting scalable service development</li>
+      <li>Developed loyalty point features and campaign capabilities, including point-related business logic, campaign rules, and integrations to support customer engagement initiatives</li>
+      <li>Collaborated on the development of point-related features across the Amaze Super App, from backend services and API integration to business logic implementation</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Freelance</h3>
+    <ul>
+      <li><strong>KKU REG</strong> (Mobile Application) — <em>December 2021 – April 2022</em>. Built mobile app with Flutter (Dart) for the Bureau of Academic Administration, featuring virtual student card, push notifications, debt tracking, and grade viewing</li>
+      <li><strong>KKU PDP</strong> (Web Application) — <em>May 2021 – August 2022</em>. Developed web application to manage policies and cookies in KKU App Communication (Golang)</li>
+      <li><strong>Rewrite Java API to Golang API</strong> (Web Application) — <em>June 2022 – December 2022</em></li>
+      <li><strong>KKU TQF</strong> (Web Application) — <em>October 2023 – January 2024</em>. Khon Kaen University College Credit and Academic Program Management System (Golang)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-cat">
+      <strong>Programming Languages</strong>
+      <div>Golang, Rust (Basic), Java, Python, HTML/CSS</div>
+    </div>
+    <div class="skill-cat">
+      <strong>Databases</strong>
+      <div>SQL, MongoDB, Redis</div>
+    </div>
+    <div class="skill-cat">
+      <strong>Infrastructure &amp; CI/CD</strong>
+      <div>Jenkins, Docker, Kubernetes, AWS Secrets, environment management (Dev/Staging/UAT/Prod), deployment pipelines</div>
+    </div>
+    <div class="skill-cat">
+      <strong>Version Control</strong>
+      <div>GitHub, GitLab</div>
+    </div>
+    <div class="skill-cat">
+      <strong>Monitoring &amp; Analytics</strong>
+      <div>Grafana, Kouncil</div>
+    </div>
+    <div class="skill-cat">
+      <strong>Collaboration &amp; Practices</strong>
+      <div>Scrum / Agile, sprint planning, story point estimation, code review, OOP, DDD, SOLID, design patterns</div>
+    </div>
+    <div class="skill-cat">
+      <strong>Frameworks &amp; Tools</strong>
+      <div>RESTful API, gRPC, Firebase Cloud Messaging, Kafka, Microservices, DevSecOps</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Soft Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-cat">
+      <strong>Leadership &amp; Mentorship</strong>
+      <div>Guiding junior developers, providing feedback, supervising coding practices</div>
+    </div>
+    <div class="skill-cat">
+      <strong>Problem-Solving &amp; Troubleshooting</strong>
+      <div>Debugging issues, optimizing code, applying best practices</div>
+    </div>
+    <div class="skill-cat">
+      <strong>Code Quality &amp; Standards</strong>
+      <div>Reviewing pull requests, enforcing clean code, aligning team coding standards</div>
+    </div>
+    <div class="skill-cat">
+      <strong>Collaboration &amp; Communication</strong>
+      <div>Coordinating with cross-functional teams, explaining technical concepts clearly, facilitating knowledge sharing</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
